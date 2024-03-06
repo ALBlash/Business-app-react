@@ -56,7 +56,7 @@ const Router = () => {
             <Route path={ROUTES.CREATE_CARD} element={<CreateCardPage />} />
             <Route path={ROUTES.ABOUT} element={<AboutPage />} />
             <Route path={ROUTES.CARDS} element={<CardsPage />} />
-            <Route path={ROUTES.USER_PROFILE} element={<UsersProfile />} />
+            {/* <Route path={ROUTES.USER_PROFILE} element={<UsersProfile />} /> */}
             <Route path={ROUTES.SIGNUP} element={<SignupPage />} />
             <Route path={ROUTES.MY_CARDS} element={<MyCardsPage />} />
             <Route path={ROUTES.LOGIN} element={<LoginPage />} />

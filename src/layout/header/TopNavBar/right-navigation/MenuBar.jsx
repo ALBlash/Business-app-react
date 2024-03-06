@@ -1,6 +1,6 @@
 import MuiMenu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import { Box, IconButton } from '@mui/material';
+import { Box, IconButton, useMediaQuery } from '@mui/material';
 import NavBarLink from '../../../../routes/NavBarLink';
 import ROUTES from '../../../../routes/routeModel';
 import LightModeIcon from '@mui/icons-material/LightMode';
@@ -13,6 +13,7 @@ const MenuBar = ({ isMenuOpen, anchorEl, onCloseMenu }) => {
     const { user } = useUser();
     const { handleLogout } = useUsers();
     const { isDark, toggleDarkMode } = useTheme();
+    const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('md'));
 
 
     const onLogout = () => {
@@ -37,9 +38,6 @@ const MenuBar = ({ isMenuOpen, anchorEl, onCloseMenu }) => {
         >
             {user && (
                 <Box>
-                    <NavBarLink to={ROUTES.USER_PROFILE}>
-                        <MenuItem onClick={onCloseMenu} sx={{ color: isDark ? "#e3f2fd" : "#333333" }}>Profile</MenuItem>
-                    </NavBarLink>
                     <NavBarLink to={ROUTES.ABOUT}>
                         <MenuItem onClick={onCloseMenu} sx={{ color: isDark ? "#e3f2fd" : "#333333" }}>About</MenuItem>
                     </NavBarLink>
@@ -54,9 +52,10 @@ const MenuBar = ({ isMenuOpen, anchorEl, onCloseMenu }) => {
                             <MenuItem onClick={onCloseMenu} sx={{ color: isDark ? "#e3f2fd" : "#333333" }}>CRM</MenuItem>
                         </NavBarLink>
                     )}
-                    <IconButton onClick={toggleDarkMode} sx={{ marginLeft: 1 }}>
+                    {isSmallScreen && (<IconButton onClick={toggleDarkMode} sx={{ marginLeft: 1 }}>
                         {!isDark ? <LightModeIcon /> : <DarkModeIcon />}
-                    </IconButton>
+                    </IconButton>)}
+
                 </Box>
             )}
             {!user && (

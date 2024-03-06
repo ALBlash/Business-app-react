@@ -15,7 +15,7 @@ const ErrorPage = () => {
                     <Typography variant="h5" color="initial">
                         Sorry, this page does not exist
                     </Typography>
-                    <NavItem label="Go back to home Page" to={ROUTES.SANDBOX} color="primary">
+                    <NavItem label="Go back to home Page" to={ROUTES.ROOT} color="primary">
 
                     </NavItem>
                     {/* <Button variant="text" color="primary">
