@@ -9,7 +9,7 @@ import { UserProvider } from './users/providers/UserProvider';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename='Business-app-react'>
         <ThemeProvider>
           <SnackbarProvider>
             <UserProvider>

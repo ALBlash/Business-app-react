@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import {
-    Typography,
     Table,
     TableBody,
     TableCell,
@@ -8,7 +7,6 @@ import {
     TableHead,
     TableRow,
     Paper,
-    Button,
 } from "@mui/material";
 import { getUsers, updateUser } from "../services/usersApiService";
 import PageHeader from "../../components/PageHeader";
