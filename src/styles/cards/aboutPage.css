@@ -1,0 +1,52 @@
+/* aboutPage.css */
+
+/* Style for the content inside GridItem */
+.about-page-content {
+    padding: 20px;
+    /* Add padding for spacing */
+    background-color: #fff;
+    /* Set background color */
+    border-radius: 8px;
+    /* Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add box-shadow for a subtle lift */
+}
+
+/* Style for the key features and how it works sections */
+.about-page-section {
+    margin-bottom: 20px;
+    /* Add margin for spacing between sections */
+}
+
+/* Style for the headings */
+.about-page-heading {
+    color: #333;
+    /* Set heading color */
+}
+
+
+/* Style for the list items */
+.about-page-list-item {
+    margin-bottom: 10px;
+    /* Add margin for spacing between list items */
+}
+
+/* Style for the download and sign-up/log-in buttons */
+.about-page-buttons {
+    margin-top: 20px;
+    /* Add margin for spacing between buttons */
+}
+
+/* Responsive style for the image */
+.about-page-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    .about-page-content {
+        padding: 15px;
+        /* Adjust padding for small screens */
+    }
+}
