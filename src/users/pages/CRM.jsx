@@ -43,10 +43,9 @@ const CRM = () => {
     };
 
     return (
-        <div>
-            <PageHeader title="Welcome to the CRM page" />
-            {" "}
-            <TableContainer component={Paper} sx={{ overflowX: "auto" }}>
+        <div style={{ padding: "20px", textAlign: "center" }}>
+            <PageHeader title="Welcome to the CRM page" subtitle="see all user's" />
+            <TableContainer component={Paper} sx={{ overflowX: "auto", marginTop: 2 }}>
                 <Table>
                     <TableHead>
                         <TableRow>

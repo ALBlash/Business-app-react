@@ -11,7 +11,7 @@ const Logged = ({ setAnchorEl }) => {
                 sx={{ p: 0, display: "inline-flex", marginLeft: 2 }}
                 onClick={() => setOpen(true)}
             >
-                <Avatar src="/assets/images/Avatar.png" alt="person"></Avatar>
+                <Avatar src="./assets/images/Avatar.png" alt="person"></Avatar>
             </IconButton>
         </Tooltip>
     )
